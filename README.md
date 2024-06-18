@@ -1,5 +1,5 @@
 # Zero To Hero In JS
-A collection of solutions to 250+ JavaScript problems, covering various algorithms and data structures.
+A collection of solutions to 250+ JavaScript problems & 50+ JavaScript projects, covering various algorithms and data structures.
 
 ## Contributions
 
