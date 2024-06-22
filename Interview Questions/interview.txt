@@ -1,0 +1,59 @@
+1. What are the different data types in JavaScript?
+   - JavaScript has primitive types like string, number, boolean, null, undefined, and also complex types like object and function.
+
+2. What is the difference between `undefined` and `null`?
+   - `undefined` means a variable has been declared but has not yet been assigned a value. `null` is an assignment value representing a deliberate absence of any object value.
+
+3. What is closure in JavaScript?
+   - A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (lexical environment). It allows a function to access variables from an outer function scope even after the outer function has finished executing.
+
+4. Explain hoisting in JavaScript.
+   - Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compile phase, before execution. This allows variables to be used before they are declared.
+
+5. What are the different ways to create objects in JavaScript?
+   - Objects in JavaScript can be created using object literals, constructors, and classes (introduced in ES6).
+
+6. What is `this` keyword in JavaScript?
+   - `this` refers to the object to which the current executing code belongs. In the global context, `this` refers to the global object (window in browsers).
+
+7. What are the different ways to handle asynchronous code in JavaScript?
+   - Callbacks, Promises (introduced in ES6), and Async/Await (introduced in ES8) are the common ways to handle asynchronous operations in JavaScript.
+
+8. Explain the concept of prototypal inheritance in JavaScript.
+   - JavaScript objects have a special hidden property `__proto__` (pronounced as dunder proto) that points to another object, its prototype. When a property is accessed on an object and is not found, JavaScript will look at the object's prototype, and so on up the prototype chain until it finds the property or reaches the end of the chain (typically `null`).
+
+9. What are the different ways to add elements to the DOM?
+   - You can add elements to the DOM using methods like `appendChild`, `insertBefore`, `innerHTML`, `createElement`, etc.
+
+10. Explain event delegation in JavaScript.
+    - Event delegation is a technique where you add a single event listener to a parent element, rather than adding multiple event listeners to multiple child elements. This is particularly useful when you have dynamically added elements or a large number of elements.
+
+11. What is the difference between `==` and `===` in JavaScript?
+    - `==` is a loose equality comparison operator that performs type coercion, while `===` is a strict equality comparison operator that does not perform type coercion. For most cases, `===` is preferred because it checks both value and type.
+
+12. What are ES6 features you have used or are familiar with?
+    - ES6 (ECMAScript 2015) introduced many new features such as let and const for variable declarations, arrow functions, classes, template literals, destructuring assignment, spread syntax, and more.
+
+13. What is the difference between `let`, `const`, and `var`?
+    - `var` is function-scoped and can be redeclared and updated. `let` and `const` are block-scoped; `let` can be updated but not redeclared, while `const` cannot be updated or redeclared (though its contents, if an object or array, can be modified).
+
+14. Explain the concept of promises in JavaScript.
+    - Promises are objects representing the eventual completion or failure of an asynchronous operation. They are used to handle asynchronous computations and provide better control over callbacks.
+
+15. What are arrow functions in JavaScript?
+    - Arrow functions are a concise way to write function expressions in JavaScript. They are function expressions that have a shorter syntax compared to traditional function expressions and lexically bind `this`.
+
+16. What is the Event Loop in JavaScript?
+    - The Event Loop is the process that allows JavaScript to perform non-blocking I/O operations despite being single-threaded. It handles tasks such as executing code, handling events, and asynchronous callbacks.
+
+17. Explain the concept of `map`, `filter`, and `reduce` functions in JavaScript.
+    - These are higher-order array methods introduced in ES5. `map` applies a function to each element in an array and returns a new array. `filter` creates a new array with elements that pass a test. `reduce` applies a function to each element and reduces the array to a single value.
+
+18. What are modules in JavaScript?
+    - Modules allow you to split your code into multiple files and import/export functionality between files. ES6 introduced a standard for JavaScript modules using `import` and `export` statements.
+
+19. How do you handle errors in JavaScript?
+    - Errors in JavaScript can be handled using `try...catch` blocks to catch exceptions and handle errors gracefully.
+
+20. What tools and techniques do you use for debugging JavaScript code?
+    - Debugging JavaScript can be done using browser developer tools (like Chrome DevTools), `console.log` statements, breakpoints, and tools like `debugger` statement, `console.trace`, etc.

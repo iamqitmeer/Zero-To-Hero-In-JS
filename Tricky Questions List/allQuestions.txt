@@ -1,0 +1,944 @@
+1. Question: What will the following code output and why?
+    ```javascript
+    console.log(0.1 + 0.2 === 0.3);
+    ```
+
+2. Question: What will be the output of this code and why?
+    ```javascript
+    var a = [1, 2, 3];
+    var b = [1, 2, 3];
+    console.log(a == b);
+    console.log(a === b);
+    ```
+
+3. Question: How can you add a property to an object conditionally, based on another property?
+    ```javascript
+    const condition = true;
+    const obj = {
+      a: 1,
+      ...(condition && { b: 2 })
+    };
+    console.log(obj);
+    ```
+
+4. Question: What will the following code output and why?
+    ```javascript
+    console.log(typeof null);
+    ```
+
+5. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    setTimeout(() => {
+      console.log(x);
+    }, 0);
+    x = 20;
+    ```
+
+6. Question: What will the following code output and why?
+    ```javascript
+    var foo = "Hello";
+    (function() {
+      console.log(foo);
+      var foo = "World";
+      console.log(foo);
+    })();
+    ```
+
+7. Question: What will the following code output and why?
+    ```javascript
+    function test() {
+      console.log(a);
+      console.log(foo());
+
+      var a = 1;
+      function foo() {
+        return 2;
+      }
+    }
+
+    test();
+    ```
+
+8. Question: What is the difference between `==` and `===`?
+
+9. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    let b = 2;
+
+    [a, b] = [b, a];
+
+    console.log(a, b);
+    ```
+
+10. Question: What will the following code output and why?
+    ```javascript
+    const obj = {
+      a: 'one',
+      b: 'two',
+      a: 'three'
+    };
+    console.log(obj);
+    ```
+
+11. Question: How do you clone an object in JavaScript?
+    ```javascript
+    const obj = { a: 1 };
+    const clone1 = { ...obj };
+    const clone2 = Object.assign({}, obj);
+    ```
+
+12. Question: What will the following code output and why?
+    ```javascript
+    let foo = { n: 1 };
+    let bar = foo;
+    foo.x = foo = { n: 2 };
+
+    console.log(foo.x);
+    console.log(bar.x);
+    ```
+
+13. Question: What is the output of this code?
+    ```javascript
+    console.log([..."hello"]);
+    ```
+
+14. Question: What will the following code output and why?
+    ```javascript
+    function sayHi() {
+      console.log(name);
+      console.log(age);
+      var name = 'Lydia';
+      let age = 21;
+    }
+
+    sayHi();
+    ```
+
+15. Question: What will the following code output and why?
+    ```javascript
+    for (var i = 0; i < 3; i++) {
+      setTimeout(() => console.log(i), 1);
+    }
+
+    for (let j = 0; j < 3; j++) {
+      setTimeout(() => console.log(j), 1);
+    }
+    ```
+
+16. Question: What will the following code output and why?
+    ```javascript
+    const person = { name: 'John' };
+    Object.freeze(person);
+    person.age = 30;
+    console.log(person);
+    ```
+
+17. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a;
+    a = [4, 5, 6];
+    console.log(b);
+    ```
+
+18. Question: What is the difference between `null` and `undefined`?
+
+19. Question: What will the following code output and why?
+    ```javascript
+    const obj = { a: 1, b: 2 };
+    const newObj = { ...obj, b: 3 };
+    console.log(newObj);
+    ```
+
+20. Question: What will the following code output and why?
+    ```javascript
+    (function() {
+      console.log(this);
+    })();
+    ```
+
+21. Question: What will the following code output and why?
+    ```javascript
+    console.log([] + []);
+    console.log({} + []);
+    console.log([] + {});
+    console.log({} + {});
+    ```
+
+22. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    let b = a++;
+    let c = ++a;
+    console.log(a, b, c);
+    ```
+
+23. Question: What will the following code output and why?
+    ```javascript
+    console.log(typeof NaN);
+    ```
+
+24. Question: What will the following code output and why?
+    ```javascript
+    let x = {}.toString;
+    console.log(x());
+    ```
+
+25. Question: What will the following code output and why?
+    ```javascript
+    console.log(1 + "1" - 1);
+    console.log("1" - 1 + 1);
+    ```
+
+26. Question: What will the following code output and why?
+    ```javascript
+    console.log(true + false);
+    console.log(true - false);
+    ```
+
+27. Question: What will the following code output and why?
+    ```javascript
+    console.log(!!null);
+    console.log(!!undefined);
+    console.log(!!0);
+    console.log(!!"");
+    console.log(!!NaN);
+    console.log(!!"false");
+    console.log(!![]);
+    ```
+
+28. Question: What will the following code output and why?
+    ```javascript
+    const person = {
+      name: 'Alice',
+      greet() {
+        console.log(`Hello, ${this.name}!`);
+      }
+    };
+
+    const greet = person.greet;
+    greet();
+    ```
+
+29. Question: What will the following code output and why?
+    ```javascript
+    const add = (a, b) => a + b;
+    const curriedAdd = a => b => a + b;
+
+    console.log(add(1, 2));
+    console.log(curriedAdd(1)(2));
+    ```
+
+30. Question: What will the following code output and why?
+    ```javascript
+    const foo = {
+      bar() {
+        return this.baz;
+      },
+      baz: 1
+    };
+
+    (function(){
+      return typeof arguments[0]();
+    })(foo.bar)
+    ```
+
+31. Question: What will the following code output and why?
+    ```javascript
+    console.log((a => a)(1));
+    console.log((a => a)(1, 2));
+    ```
+
+32. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr[10] = 99;
+    console.log(arr.length);
+    ```
+
+33. Question: What will the following code output and why?
+    ```javascript
+    console.log([] == []);
+    console.log([] == ![]);
+    ```
+
+34. Question: What will the following code output and why?
+    ```javascript
+    let x = 5;
+    let y = x++ + ++x;
+    console.log(y);
+    ```
+
+35. Question: What will the following code output and why?
+    ```javascript
+    console.log("1" - - "1");
+    ```
+
+36. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a;
+    a[0] = 99;
+    console.log(b);
+    ```
+
+37. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = [...a];
+    a[0] = 99;
+    console.log(b);
+    ```
+
+38. Question: What will the following code output and why?
+    ```javascript
+    console.log("5" + 3);
+    console.log("5" - 3);
+    ```
+
+39. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    setTimeout(() => {
+      console.log(a);
+    }, 1000);
+    a = 2;
+    ```
+
+40. Question: What will the following code output and why?
+    ```javascript
+    const obj = {
+      a: 1,
+      b: 2
+    };
+
+    const newObj = JSON.parse(JSON.stringify(obj));
+    newObj.a = 3;
+
+    console.log(obj.a, newObj.a);
+    ```
+
+41. Question: What will the following code output and why?
+    ```javascript
+    console.log((() => 2)());
+    console.log((function() { return 2; })());
+    ```
+
+42. Question: What will the following code output and why?
+    ```javascript
+    function foo() {
+      return
+      {
+        bar: "hello"
+      };
+    }
+
+    console.log(foo());
+    ```
+
+43. Question: What will the following code output and why?
+    ```javascript
+    function foo() {
+      return {
+        bar: "hello"
+      };
+    }
+
+    console.log(foo());
+    ```
+
+44. Question: What will the following code output and why?
+    ```javascript
+    function Car() {
+      this.make = "Toyota";
+      return {
+        make: "Ford"
+      };
+    }
+
+    const myCar = new Car();
+    console.log(myCar.make);
+    ```
+
+45. Question: What will the following code output and why?
+    ```javascript
+    let a = 10;
+    (function() {
+      console.log(a);
+      a = 5;
+      console.log(window.a);
+      var a = 20;
+      console.log(a);
+    })();
+    ```
+
+46. Question: What will the following code output and why?
+    ```javascript
+    const a = {};
+    const b = { key: "b" };
+    const c = { key: "c" };
+
+    a[b] = 123;
+    a[c] = 456;
+
+    console.log(a[b]);
+    ```
+
+"[object Object]"` as object keys.
+
+47. Question: What will the following code output and why?
+    ```javascript
+    const foo = {
+      bar: function() {
+        return this.baz;
+      },
+      baz: 1
+    };
+
+    const qux = { baz: 2 };
+    console.log(foo.bar.call(qux));
+    ```
+
+48. Question: What will the following code output and why?
+    ```javascript
+    function foo() {
+      console.log(this);
+    }
+
+    const bar = {
+      foo: foo
+    };
+
+    const baz = bar.foo;
+    baz();
+    ```
+
+49. Question: What will the following code output and why?
+    ```javascript
+    let obj = { a: 1 };
+    Object.defineProperty(obj, "b", {
+      value: 2,
+      writable: false
+    });
+
+    obj.b = 3;
+    console.log(obj.b);
+    ```
+
+50. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    let y = 20;
+
+    x = x ^ y;
+    y = x ^ y;
+    x = x ^ y;
+
+    console.log(x, y);
+    ```
+
+51. Question: What will the following code output and why?
+    ```javascript
+    console.log((true && false) || (false && true));
+    console.log(true && (false || true));
+    ```
+
+52. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a.map(num => {
+      if (num % 2 === 0) {
+        return;
+      }
+      return num * 2;
+    });
+
+    console.log(b);
+    ```
+
+53. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    let b = (a = 2);
+    console.log(a);
+    console.log(b);
+    ```
+
+54. Question: What will the following code output and why?
+    ```javascript
+    console.log((0.1 * 0.2).toFixed(2));
+    console.log((0.1 + 0.2).toFixed(2));
+    ```
+
+55. Question: What will the following code output and why?
+    ```javascript
+    let a = { n: 1 };
+    let b = a;
+    a = { n: 2 };
+    console.log(b.n);
+    ```
+
+56. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr[10] = 99;
+    console.log(arr);
+    ```
+
+57. Question: What will the following code output and why?
+    ```javascript
+    console.log(2 + "2" - 2);
+    console.log("2" - 2 + 2);
+    ```
+
+58. Question: What will the following code output and why?
+    ```javascript
+    console.log([] == 0);
+    console.log([] == false);
+    console.log([] == []);
+    ```
+
+59. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    (function() {
+      console.log(x);
+      var x = 5;
+      console.log(x);
+    })();
+    ```
+
+60. Question: What will the following code output and why?
+    ```javascript
+    let obj = { a: 1, b: 2 };
+    let newObj = Object.assign({ c: 3 }, obj);
+
+    console.log(newObj);
+    ```
+
+Sure, here are 50 more tricky JavaScript questions without answers:
+
+1. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    (function() {
+      console.log(x);
+      let x = 5;
+      console.log(x);
+    })();
+    ```
+
+2. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    function foo() {
+      a = 10;
+      return;
+      function a() {}
+    }
+    foo();
+    console.log(a);
+    ```
+
+3. Question: What will the following code output and why?
+    ```javascript
+    const a = {};
+    const b = { key: 'b' };
+    const c = { key: 'c' };
+
+    a[b] = 123;
+    a[c] = 456;
+
+    console.log(a[b]);
+    ```
+
+4. Question: What will the following code output and why?
+    ```javascript
+    const foo = {
+      bar: function() {
+        return this.baz;
+      },
+      baz: 1
+    };
+
+    const qux = { baz: 2 };
+    console.log(foo.bar.call(qux));
+    ```
+
+5. Question: What will the following code output and why?
+    ```javascript
+    function foo() {
+      console.log(this);
+    }
+
+    const bar = {
+      foo: foo
+    };
+
+    const baz = bar.foo;
+    baz();
+    ```
+
+6. Question: What will the following code output and why?
+    ```javascript
+    const obj = {
+      a: 1,
+      b: 2
+    };
+
+    Object.freeze(obj);
+    obj.a = 3;
+
+    console.log(obj);
+    ```
+
+7. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr[10] = 99;
+    console.log(arr);
+    ```
+
+8. Question: What will the following code output and why?
+    ```javascript
+    console.log((true && false) || (false && true));
+    console.log(true && (false || true));
+    ```
+
+9. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a.map(num => {
+      if (num % 2 === 0) {
+        return;
+      }
+      return num * 2;
+    });
+
+    console.log(b);
+    ```
+
+10. Question: What will the following code output and why?
+    ```javascript
+    let a = 1;
+    let b = (a = 2);
+    console.log(a);
+    console.log(b);
+    ```
+
+11. Question: What will the following code output and why?
+    ```javascript
+    console.log((0.1 * 0.2).toFixed(2));
+    console.log((0.1 + 0.2).toFixed(2));
+    ```
+
+12. Question: What will the following code output and why?
+    ```javascript
+    let a = { n: 1 };
+    let b = a;
+    a = { n: 2 };
+    console.log(b.n);
+    ```
+
+13. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr[10] = 99;
+    console.log(arr);
+    ```
+
+14. Question: What will the following code output and why?
+    ```javascript
+    console.log(2 + "2" - 2);
+    console.log("2" - 2 + 2);
+    ```
+
+15. Question: What will the following code output and why?
+    ```javascript
+    console.log([] == 0);
+    console.log([] == false);
+    console.log([] == []);
+    ```
+
+16. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    (function() {
+      console.log(x);
+      var x = 5;
+      console.log(x);
+    })();
+    ```
+
+17. Question: What will the following code output and why?
+    ```javascript
+    let obj = { a: 1, b: 2 };
+    let newObj = Object.assign({ c: 3 }, obj);
+
+    console.log(newObj);
+    ```
+
+18. Question: What will the following code output and why?
+    ```javascript
+    function foo() {
+      return {
+        bar: "hello"
+      };
+    }
+
+    console.log(foo());
+    ```
+
+19. Question: What will the following code output and why?
+    ```javascript
+    function Car() {
+      this.make = "Toyota";
+      return {
+        make: "Ford"
+      };
+    }
+
+    const myCar = new Car();
+    console.log(myCar.make);
+    ```
+
+20. Question: What will the following code output and why?
+    ```javascript
+    let x = 10;
+    setTimeout(() => {
+      console.log(x);
+    }, 0);
+    x = 20;
+    ```
+
+21. Question: What will the following code output and why?
+    ```javascript
+    var foo = "Hello";
+    (function() {
+      console.log(foo);
+      var foo = "World";
+      console.log(foo);
+    })();
+    ```
+
+22. Question: What will the following code output and why?
+    ```javascript
+    function test() {
+      console.log(a);
+      console.log(foo());
+
+      var a = 1;
+      function foo() {
+        return 2;
+      }
+    }
+
+    test();
+    ```
+
+23. Question: What will the following code output and why?
+    ```javascript
+    console.log("5" + 3);
+    console.log("5" - 3);
+    ```
+
+24. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a;
+    a[0] = 99;
+    console.log(b);
+    ```
+
+25. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = [...a];
+    a[0] = 99;
+    console.log(b);
+    ```
+
+26. Question: What will the following code output and why?
+    ```javascript
+    console.log((() => 2)());
+    console.log((function() { return 2; })());
+    ```
+
+27. Question: What will the following code output and why?
+    ```javascript
+    const obj = { a: 1, b: 2 };
+    const newObj = { ...obj, b: 3 };
+    console.log(newObj);
+    ```
+
+28. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    console.log(arr.includes(2));
+    console.log(arr.includes(4));
+    ```
+
+29. Question: What will the following code output and why?
+    ```javascript
+    const obj1 = { a: 1, b: { c: 2 } };
+    const obj2 = { ...obj1 };
+    obj1.b.c = 3;
+    console.log(obj2.b.c);
+    ```
+
+30. Question: What will the following code output and why?
+    ```javascript
+    const obj = { a: 1, b: 2 };
+    for (let key in obj) {
+      console.log(key);
+    }
+    ```
+
+31. Question: What will the following code output and why?
+    ```javascript
+    console.log([1, 2, 3] + [4, 5, 6]);
+    ```
+
+32. Question: What will the following code output and why?
+    ```javascript
+    console.log(1 < 2 < 3);
+    console.log(3 > 2 > 1);
+    ```
+
+33. Question: What will the following code output and why?
+    ```javascript
+    let arr = [1, 2, 3];
+    arr.length = 5;
+    console.log(arr);
+    ```
+
+34. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    a[10] = 99;
+    console.log(a.length);
+    ```
+
+35. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a.splice(1, 1);
+    console.log(a);
+    console.log(b);
+    ```
+
+36. Question: What will the following code output and why?
+    ```javascript
+    let a = [1, 2, 3];
+    let b = a.slice(1, 2);
+    console.log(a);
+    console.log(b);
+    ```
+
+37. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const arr2 = arr.map(num => num * 2);
+    console.log(arr);
+    console.log(arr2);
+    ```
+
+38. Question: What will the following code output and why?
+    ```javascript
+    const arr =
+
+ [1, 2, 3];
+    const arr2 = arr.filter(num => num % 2 === 0);
+    console.log(arr);
+    console.log(arr2);
+    ```
+
+39. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const sum = arr.reduce((acc, num) => acc + num, 0);
+    console.log(sum);
+    ```
+
+40. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const allEven = arr.every(num => num % 2 === 0);
+    console.log(allEven);
+    ```
+
+41. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const someEven = arr.some(num => num % 2 === 0);
+    console.log(someEven);
+    ```
+
+42. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr.forEach(num => {
+      if (num % 2 === 0) {
+        console.log(num);
+      }
+    });
+    ```
+
+43. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const newArr = arr.concat([4, 5, 6]);
+    console.log(newArr);
+    ```
+
+44. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr.push(4);
+    console.log(arr);
+    ```
+
+45. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const lastElement = arr.pop();
+    console.log(arr);
+    console.log(lastElement);
+    ```
+
+46. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const firstElement = arr.shift();
+    console.log(arr);
+    console.log(firstElement);
+    ```
+
+47. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    arr.unshift(0);
+    console.log(arr);
+    ```
+
+48. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const index = arr.indexOf(2);
+    console.log(index);
+    ```
+
+49. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const found = arr.find(num => num % 2 === 0);
+    console.log(found);
+    ```
+
+50. Question: What will the following code output and why?
+    ```javascript
+    const arr = [1, 2, 3];
+    const foundIndex = arr.findIndex(num => num % 2 === 0);
+    console.log(foundIndex);
