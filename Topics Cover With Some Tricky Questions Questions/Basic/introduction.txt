@@ -1,0 +1,60 @@
+1. History of JavaScript
+
+1. JavaScript was originally named Mocha, then renamed to LiveScript, and finally JavaScript to capitalize on the popularity of Java at the time.
+2. JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications Corporation.
+3. JavaScript is an interpreted language, meaning it is executed line by line.
+
+2. What is JavaScript
+
+1. JavaScript is a high-level, dynamic programming language commonly used for creating interactive effects within web browsers.
+2. Actions: Enables interactivity.
+3. Updates: Alters page without reloading.
+4. Events: Responds to user actions.
+5. Data: Fetches and sends info to server.
+
+3. Popularity of JavaScript
+
+JavaScript is one of the most popular programming languages in the world, consistently ranking at the top in surveys and job listings. 
+2. Average JavaScript Dev Salary in India:
+• Entry-Level (0-1 year): Around ₹3,50,000 per annum.
+• Mid-Level (2-5 years): Approximately ₹6,00,000 to ₹10,00,000 per annum.
+• Experienced (5+ years): Can exceed ₹10,00,000 per annum, potentially reaching up to ₹20,37,500.
+
+4.Applications of JavaScript
+
+1. HTML: Defines the structure and content of the website.
+2. CSS: Specifies the appearance and layout of the website.
+3. JavaScript: Adds interactivity and dynamic behavior to the website
+
+Web Applications:
+• React: A library for building user interfaces, maintained by Facebook.
+• Angular: A platform for building mobile and desktop web applications, maintained by Google.
+• Vue.js: A progressive framework for building user interfaces.
+
+Server-Side:
+• Node.js: Allows JavaScript to run on the server, used for building scalable network applications.
+• Express.js: A minimal and flexible Node.js web application framework.
+
+Mobile Applications:
+• React Native: Builds mobile apps using JavaScript and React.
+• Ionic: A framework for building cross-platform mobile apps with web technologies like HTML, CSS, and JavaScript.
+• NativeScript: Allows building native iOS and Android apps using JavaScript or TypeScript.
+
+BuildTools:
+• Webpack: A module bundler for JavaScript applications.
+• Parcel: A fast, zero-configuration web application bundler.
+• Gulp: A toolkit to automate tasks in your development workflow.
+
+Desktop Applications:
+• Electron: Allows building cross-platform desktop applications using HTML, CSS, and JavaScript.
+• NW.js: A framework for building native applications with web technologies.
+
+Cameras and Speakers:
+• Three.js: A library that makes WebGL - 3D programming for the web - easier to use.
+• WebRTC: A technology that enables peer-to-peer audio, video, and data sharing.
+• Howler.js: A JavaScript audio library for the modern web.
+
+5. JavaScript vs ECMA
+
+1. ECMAScript is the standardized specification developed by ECMA International that defines the core features, syntax, and functionalities of JavaScript and similar scripting languages.
+2. JavaScript is the actual language implementation.
