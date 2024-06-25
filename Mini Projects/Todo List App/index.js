@@ -9,22 +9,10 @@ addTodoBtn.addEventListener("click", (val) => {
   if (inputValue.value) {
     console.log(inputValue.value);
 
-    let listElement = `<li
-    class="flex justify-between items-center p-4 border rounded bg-gray-700"
-  >
-    <span>${inputValue.value}</span>
-    <div class="flex space-x-2">
-      <button class="text-green-500 hover:text-green-400">
-        <i class="ri-check-line"></i>
-      </button>
-      <button onclick(editTodo(this)) class="text-yellow-500 hover:text-yellow-400">
-        <i class="ri-edit-box-fill"></i>
-      </button>
-      <button onclick(deleteTodo(this)) class="text-red-500 hover:text-red-400">
-        <i class="ri-delete-bin-6-fill"></i>
-      </button>
-    </div>
-  </li>`;
+    let listElement = `<li class="flex justify-between items-center p-4 border rounded bg-gray-700">
+                <span>${inputValue.value}</span>
+                <button onclick="deleteTodo(this)" class="bg-red-500 text-white p-2 rounded hover:bg-red-600 ml-2">Delete</button>
+            </li>`;
 
     todoList.innerHTML += listElement;
 
@@ -34,5 +22,6 @@ addTodoBtn.addEventListener("click", (val) => {
   }
 });
 
-let editTodo = () => {}
-let deleteTodo = () => {}
+let deleteTodo = (ele) => {
+  ele.parentElement.remove();
+};
