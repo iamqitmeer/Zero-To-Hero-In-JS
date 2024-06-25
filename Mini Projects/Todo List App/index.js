@@ -25,3 +25,10 @@ addTodoBtn.addEventListener("click", (val) => {
 let deleteTodo = (ele) => {
   ele.parentElement.remove();
 };
+
+let abc = document.getElementById("radio")
+
+abc.addEventListener("click", (val) => {
+    console.log(val);
+})
+

@@ -13,17 +13,28 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+  <body
+    class="bg-gray-900 text-white min-h-screen flex items-center justify-center"
+  >
     <div class="w-full max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
-        <h1 class="text-3xl font-bold mb-6 text-center">Todo List</h1>
-        <div class="flex mb-4">
-            <input id="input" type="text" placeholder="Add a new task" class="w-full p-2 border border-gray-600 rounded-l text-black focus:outline-none">
-            <button id="addTodoBtn" class="bg-green-500 text-white p-2 rounded-r hover:bg-green-600">Add</button>
-        </div>
-        <ul id="todo-list" class="space-y-4">
-            
-        </ul>
+      <h1 class="text-3xl font-bold mb-6 text-center">Todo List</h1>
+      <div class="flex mb-4">
+        <input
+          id="input"
+          type="text"
+          placeholder="Add a new task"
+          class="w-full p-2 border border-gray-600 rounded-l text-black focus:outline-none"
+        />
+        <button
+          id="addTodoBtn"
+          class="bg-green-500 text-white p-2 rounded-r hover:bg-green-600"
+        >
+          Add
+        </button>
+      </div>
+      <ul id="todo-list" class="space-y-4"></ul>
     </div>
-</body>
+  </body>
   <script src="index.js"></script>
 </html>
