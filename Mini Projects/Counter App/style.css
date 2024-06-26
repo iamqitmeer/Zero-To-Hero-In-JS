@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: poppins;
+}
+
+body{
+    background-color: #111827;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+
+#numDiv{
+    background-color: #212f4d;
+    box-shadow: -1px -1px 10px #0c1322;
+}
+
+#add{
+    width: 50%;
+    background-color: #212f4d;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px #111827;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sub{
+    width: 50%;
+    background-color: #212f4d;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px #111827;
+    border-radius: 5px;
+    cursor: pointer;
+}
