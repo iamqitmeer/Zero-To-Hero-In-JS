@@ -92,7 +92,6 @@ let saveValueToLocalStorage = (obj) => {
     localStorage.setItem("notes", JSON.stringify(notes));
   }
   displayUserNotes();
-
 };
 
 function displayUserNotes() {
