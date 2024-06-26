@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="text-5xl font-bold absolute top-24">Stopwatch</h1>
+      <div class="flex">
+          <span id="htmlHour" class="text-8xl">00</span>
+          <span class="text-8xl">:</span>
+          <span id="htmlMin" class="text-8xl">00</span>
+          <span class="text-8xl">:</span>
+          <span id="htmlSec" class="text-8xl">00</span>
+      </div>
+
+      <div class="flex items-center justify-center gap-4">
+        <button
+        id="startWatch"
+          onclick="startWatch()"
+          class="py-2 px-4 bg-[#263556] rounded-lg text-2xl my-4"
+        >
+          Start
+        </button>
+        <button
+        id="stopWatch"
+          onclick="stopWatch()"
+          class="py-2 px-4 bg-[#263556] rounded-lg text-2xl my-4"
+        >
+          Stop
+        </button>
+        <button
+          onclick="resetWatch()"
+          class="py-2 px-4 bg-[#263556] rounded-lg text-2xl my-4"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
