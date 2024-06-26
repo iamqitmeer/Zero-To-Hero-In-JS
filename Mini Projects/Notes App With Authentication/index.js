@@ -78,7 +78,7 @@ let addNoteBtn = () => {
 let saveValueToLocalStorage = (obj) => {
   //   localStorage.setItem("note", JSON.stringify(obj));
 
-  var notes = localStorage.getItem("note");
+  var notes = localStorage.getItem("notes");
   console.log("notes from local storage => ", notes);
 
   if (notes) {
