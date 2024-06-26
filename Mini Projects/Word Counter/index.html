@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+<div class="flex flex-col items-center justify-center h-screen bg-background">
+    <div class="w-[500px] px-6 py-8 rounded-lg bg-card">
+      <h1 class="text-3xl font-bold mb-6 text-card-foreground">Word &amp; Character Counter</h1>
+      <textarea
+        class="text-black flex min-h-[80px] border text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-full mb-6 resize-none border-input bg-input text-card-foreground p-4 rounded-md focus:outline-none focus:ring-1 focus:ring-primary"
+        placeholder="Start typing..."
+        rows="4"
+        id="userInput"
+      ></textarea>
+      <div class="flex justify-between text-muted-foreground">
+          <div>
+              <span id="character" class="font-medium">Characters: 0</span>
+            </div>
+            <div>
+              <span id="words" class="font-medium">Words: 0</span>
+            </div>
+      </div>
+    </div>
+  </div>
+    <script src="index.js"></script>
+</body>
+</html>
