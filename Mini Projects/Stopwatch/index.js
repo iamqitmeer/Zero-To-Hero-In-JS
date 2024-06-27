@@ -30,7 +30,7 @@ let startWatch = () => {
       htmlHour.innerText = hour;
       minute = 0;
     }
-  }, 1);
+  },18);
 
   startWatchId.disabled = true;
   stopWatchId.disabled = false;
@@ -41,13 +41,13 @@ let stopWatch = () => {
   stopWatchId.disabled = true;
 };
 let resetWatch = () => {
-    clearInterval(watchInterval)
-    miliSecond = 0
-    second = 0
-    hour = 0
-    miliSecond = 0
+  clearInterval(watchInterval);
+  miliSecond = 0;
+  second = 0;
+  hour = 0;
+  miliSecond = 0;
 
-    htmlHour.innerText = 0
-    htmlMin.innerText = 0
-    htmlSec.innerText = 0
+  htmlHour.innerText = 0;
+  htmlMin.innerText = 0;
+  htmlSec.innerText = 0;
 };

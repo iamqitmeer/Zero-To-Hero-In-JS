@@ -21,23 +21,40 @@
     <div class="main">
       <h1 class="text-5xl font-bold absolute top-24">Stopwatch</h1>
       <div class="flex">
+        <div class="flex items-center justify-center flex-col">
           <span id="htmlHour" class="text-8xl">00</span>
-          <span class="text-8xl">:</span>
+          <span class="text-3xl">Hour</span>
+        </div>
+
+        <span class="text-8xl">:</span>
+        <div class="flex items-center justify-center flex-col">
           <span id="htmlMin" class="text-8xl">00</span>
-          <span class="text-8xl">:</span>
+          <span class="text-2xl">Minutes</span>
+
+        </div>
+        <span class="text-8xl">:</span>
+        <div class="flex items-center justify-center flex-col">
           <span id="htmlSec" class="text-8xl">00</span>
+          <span class="text-2xl">Seconds</span>
+
+        </div>
       </div>
+
+      <!-- <div class="flex justify-between gap-8 items-center">
+        <span id="htmlMin" class="text-3xl">Minutes</span>
+        <span id="htmlSec" class="text-3xl">Seconds</span>
+      </div> -->
 
       <div class="flex items-center justify-center gap-4">
         <button
-        id="startWatch"
+          id="startWatch"
           onclick="startWatch()"
           class="py-2 px-4 bg-[#263556] rounded-lg text-2xl my-4"
         >
           Start
         </button>
         <button
-        id="stopWatch"
+          id="stopWatch"
           onclick="stopWatch()"
           class="py-2 px-4 bg-[#263556] rounded-lg text-2xl my-4"
         >
