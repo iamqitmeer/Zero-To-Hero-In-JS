@@ -52,12 +52,11 @@ body {
   font-size: 1.5rem;
   margin: 20px auto;
   background: #333;
-  cursor: not-allowed ;
+  cursor: not-allowed;
   border-radius: 5px;
   border: none;
   user-select: none;
 }
-
 
 .container {
   display: flex;
@@ -74,6 +73,7 @@ body {
   border: 2px solid #19172e;
   border-radius: 8px;
   font-size: 1.5rem;
+
 }
 
 footer {
@@ -90,10 +90,10 @@ footer a:visited {
   color: inherit;
 }
 
-
 .body {
   display: flex;
   flex-direction: column;
+
 }
 
 @media (max-width: 500px) {
@@ -117,7 +117,6 @@ footer a:visited {
     width: 100%;
   }
 }
-
 
 @media (max-width: 300px) {
   .copy {
