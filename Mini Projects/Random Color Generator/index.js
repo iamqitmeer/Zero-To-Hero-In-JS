@@ -15,6 +15,7 @@ window.onload = function () {
     });
   }
   
+  
   const btn = document.querySelector(".btn");
   const randomColorBlock = document.querySelectorAll(".box");
   
