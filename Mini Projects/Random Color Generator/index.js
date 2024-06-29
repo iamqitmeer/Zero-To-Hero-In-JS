@@ -2,6 +2,8 @@ window.onload = function () {
     addColor();
   };
   
+
+  
   for (let i = 1; i <= 6; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
@@ -15,7 +17,7 @@ window.onload = function () {
     });
   }
   
-  
+
   const btn = document.querySelector(".btn");
   const randomColorBlock = document.querySelectorAll(".box");
   
