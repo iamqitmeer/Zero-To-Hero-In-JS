@@ -1,3 +1,5 @@
-console.log(
-  "Mastering JavaScript: Async, Callbacks, Promises, and Fetch API Explained!"
-);
+// CallBacks
+
+function sum(a, b) {
+  return a + b;
+}
