@@ -24,26 +24,38 @@
 // -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
-let isUserLoggedIn = true;
+// let isUserLoggedIn = true;
 
-function greetAfterLoggedIn() {
-  let user = {
-    name: "Qitmeer Raza",
-    email: "iamqitmeer",
-  };
-  console.log(`Good Morning ${user.name}.`);
-}
+// function greetAfterLoggedIn() {
+//   let user = {
+//     name: "Qitmeer Raza",
+//     email: "iamqitmeer",
+//   };
+//   console.log(`Good Morning ${user.name}.`);
+// }
 
-function loggedInMsg(callback) {
-  if (isUserLoggedIn) {
-    setTimeout(() => {
-      console.log("You Are Logged In");
-      callback();
-    }, 1000);
-  }
-}
+// function loggedInMsg(callback) {
+//   if (isUserLoggedIn) {
+//     setTimeout(() => {
+//       console.log("You Are Logged In");
+//       callback();
+//     }, 1000);
+//   }
+// }
 
-loggedInMsg(greetAfterLoggedIn);
+// loggedInMsg(greetAfterLoggedIn);
+
+// let getProducts = () => {
+//   fetch("https://fakestoreapi.com/products")
+//     .then((res) => res.json())
+//     .then((data) => afterFetching(data));
+// };
+
+// let afterFetching = (data) => {
+//   console.log("data ===> ", data);
+// };
+
+// getProducts();
 
 // function logIn(callback) {
 //   setTimeout(() => {
@@ -64,6 +76,12 @@ loggedInMsg(greetAfterLoggedIn);
 // }
 
 // logIn(userInformation);
+
+// function argumentsLength(s) {
+//   console.log(s.toLowerCase());
+// }
+
+// argumentsLength("Hello");
 
 // -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
