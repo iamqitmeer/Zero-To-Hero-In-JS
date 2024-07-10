@@ -95,8 +95,6 @@
 // -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
 
-
-
 // let newPromise = new Promise((res, rej) => {
 //   if (5 == "1") {
 //     res("User is Logged In");
@@ -140,6 +138,73 @@
 // }).catch((err) => {
 //   console.log(err);
 // });
+
+// Promise Chaining
+
+// function data1() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Data 1 Fetched");
+//       res("Fetched Data 1");
+//     }, 2000);
+//   });
+// }
+
+// function data2() {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       console.log("Data 2 Fetched");
+//       res("Fetched Data 2");
+//     }, 2000);
+//   });
+// }
+// console.log("Fetching Data 1");
+// data1().then((val) => {
+//   console.log("Fetching Data 2");
+//   data2().then((res) => {});
+// });
+
+// -------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
+
+// Async/Await
+
+// -------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
+
+// Async Function Hamaisha Promise Return Krta He.
+// Async/await Promises ko aur bhi aasan banata hai. async keyword function ke aage lagate hain, aur await keyword use karke hum promise ka result wait kar sakte hain bina chaining ke.
+
+// async function getData() {
+//   let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => resolve("Data received!"), 2000);
+//   });
+
+//   let result = await promise; // wait till the promise resolves
+//   console.log(result); // "Data received!"
+// }
+
+// getData();
+
+// async function greet() {
+//     console.log(`Welcome`);
+// }
+
+// function asynchronous() {
+//   console.log("1");
+//   console.log("2");
+//   setTimeout(() => {
+//     console.log("3");
+//   }, 3000);
+//   console.log("4");
+//   console.log("5");
+// }
+
+// async function getAllData(){
+//     await asynchronous()
+// }
 
 // -------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------
