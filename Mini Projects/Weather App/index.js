@@ -18,8 +18,7 @@ async function searchButton() {
   //   console.log(Math.floor(jsonData.main.temp - 273.15));
   
   weatherLocation.innerText = `${jsonData.name}, ${jsonData.sys.country} `;
-  temperature.innerText = Math.floor(jsonData.main.temp - 273.15);
-  
+  temperature.innerText = Math.floor(`${jsonData.main.temp - 273.15}°C` );
 }
 
 // 273.15

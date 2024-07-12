@@ -942,3 +942,16 @@ Sure, here are 50 more tricky JavaScript questions without answers:
     const arr = [1, 2, 3];
     const foundIndex = arr.findIndex(num => num % 2 === 0);
     console.log(foundIndex);
+
+
+
+
+
+
+
+
+
+
+
+
+
