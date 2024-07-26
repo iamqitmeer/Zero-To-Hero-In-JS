@@ -51,7 +51,7 @@ async function getTodos() {
 
       let li = `<li>${
         doc.data().value
-      } <button onclick="deleteTodo((this))">Delete</button> </li>`;
+      } <button>Delete</button> </li>`;
       list.innerHTML += li;
     });
   } catch (e) {
@@ -60,6 +60,6 @@ async function getTodos() {
 }
 getTodos();
 
-function deleteTodo(val){
-    console.log(val);
+function deleteTodo() {
+  console.log("val");
 }
