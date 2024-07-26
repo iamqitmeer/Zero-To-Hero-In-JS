@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/tSlToxrrHmP
+-->
+
+<div class="flex flex-col h-screen bg-background">
+    
+    <main class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-lg border shadow-sm bg-card text-card-foreground p-4" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Total Expenses</h3>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold">$191.74</div>
+        </div>
+      </div>
+      <div class="rounded-lg border shadow-sm bg-card text-card-foreground p-4" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Total Income</h3>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold">$1200.00</div>
+        </div>
+      </div>
+      <div class="rounded-lg border shadow-sm bg-card text-card-foreground p-4" data-v0-t="card">
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Current Balance</h3>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold">$1008.26</div>
+        </div>
+      </div>
+      <div
+        class="rounded-lg border shadow-sm bg-card text-card-foreground p-4 col-span-1 md:col-span-2 lg:col-span-3"
+        data-v0-t="card"
+      >
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Recent Transactions</h3>
+        </div>
+        <div class="p-6">
+          <div class="relative w-full overflow-auto">
+            <table class="w-full caption-bottom text-sm">
+              <thead class="[&amp;_tr]:border-b">
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                    Date
+                  </th>
+                  <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                    Amount
+                  </th>
+                  <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                    Category
+                  </th>
+                  <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="[&amp;_tr:last-child]:border-0">
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2023-06-01</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-red-500">$50.99</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Groceries</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Weekly grocery shopping</td>
+                </tr>
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2023-06-05</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-green-500">$1200.00</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Salary</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">June paycheck</td>
+                </tr>
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2023-06-10</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-red-500">$25.75</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Dining</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Dinner at the new restaurant</td>
+                </tr>
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2023-06-15</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-red-500">$80.00</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Utilities</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Electricity bill</td>
+                </tr>
+                <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2023-06-20</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0 text-red-500">$35.00</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Entertainment</td>
+                  <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Movie tickets</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rounded-lg border shadow-sm bg-card text-card-foreground p-4 col-span-1 md:col-span-2 lg:col-span-3"
+        data-v0-t="card"
+      >
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Add New Transaction</h3>
+        </div>
+        <div class="p-6 grid gap-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="date"
+              >
+                Date
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="date"
+                type="date"
+                value=""
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="amount"
+              >
+                Amount
+              </label>
+              <input
+                class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="amount"
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="category"
+            >
+              Category
+            </label>
+            <button
+              type="button"
+              role="combobox"
+              aria-controls="radix-:r8:"
+              aria-expanded="false"
+              aria-autocomplete="none"
+              dir="ltr"
+              data-state="closed"
+              class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              <span style="pointer-events: none;"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                aria-hidden="true"
+              >
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="space-y-2">
+            <label
+              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              for="description"
+            >
+              Description
+            </label>
+            <textarea
+              class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              id="description"
+            ></textarea>
+          </div>
+          <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+            Add Transaction
+          </button>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+</body>
+</html>
