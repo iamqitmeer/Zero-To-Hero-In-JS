@@ -1,63 +1,57 @@
-// Write a program to find the largest of three numbers using nested if-else statements.
+// Write a function which returns true if given value of number is an integer without using any inbuilt functions
 
-// let num1 = 12;
-// let num2 = 22;
-// let num3 = 144;
-
-// if (num1 > num2) {
-//   if (num1 > num3) {
-//     console.log("First");
+// function isInteger(num) {
+//   if (num % 2 == 0) {
+//     return true;
 //   } else {
-//     console.log("Third");
-//   }
-// } else {
-//   if (num2 > num3) {
-//     console.log("Second");
-//   } else {
-//     console.log("Third");
+//     return false;
 //   }
 // }
 
-// Write a program to check if a year is a leap year using multiple conditions (divisible by 4, but not 100 unless also divisible by 400) and log the result to the console.
+// console.log(isInteger(12.1));
 
-// let year = 2023;
-// let isLeapYear;
+// Create a function which returns a random number in the given range of values both inclusive
 
-// if (year % 4 === 0) {
-//     if (year % 100 === 0) {
-//         if (year % 400 === 0) {
-//             isLeapYear = true;
-//         } else {
-//             isLeapYear = false;
-//         }
-//     } else {
-//         isLeapYear = true;
-//     }
-// } else {
-//     isLeapYear = false;
+// function generateRandomNum(num) {
+//     return Math.floor(Math.random() * num)
 // }
 
-// if (isLeapYear) {
-//     console.log(`${year} is a leap year.`);
-// } else {
-//     console.log(`${year} is not a leap year.`);
+// console.log(generateRandomNum(400));
+
+// Write a program to reverse a string
+
+// let str = "Hello World";
+// function reverseAString(str) {
+//   return str.split("").reverse().join("");
 // }
+// console.log(reverseAString(str));
 
-// Write a program to print the multiplication table of 5 using a for loop.
+// Write a program to reverse a string by words. Also show the reverse of each words in place
 
-// for (let i = 1; i <= 10; i++) {
-//   console.log(`5 x ${i} = ${5 * i}`);
+// let str = "Hello World";
+// function reverseAString(str) {
+//   return str.split(" ").reverse().join(" ");
 // }
+// console.log(reverseAString(str));
 
-// Task 3: Write a program to calculate the sum of numbers from 1 to 10 using a while loop.
+// Write a program to reverse a given integer number
 
-// let i = 1;
-// let sum = 0;
-
-// while (i <= 10) {
-//   sum += i;
-//   i++;
+// let num = 4356;
+// function reverseANum(number) {
+//   return number.toString().split("").reverse().join("");
 // }
+// let output = reverseANum(num);
+// console.log(parseInt(output));
 
-// console.log(sum);
+// Write a code to replace all the spaces of the string with underscores.
 
+// let str = "Hello World I am Qitmeer Raza a learner"
+// console.log(str.split(' ').join('-'));
+
+
+var reverse = function(x) {
+    return +x.split("").reverse().join("");
+  };
+  
+  let output = reverse(456);
+  console.log(parseInt(output));
