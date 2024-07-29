@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F3F4F6] p-12">
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/833l58nR7H4
+-->
+
+    <div class="grid gap-6 max-w-2xl mx-auto bg-white p-8 rounded-lg">
+      <div class="grid gap-2">
+        <div class="mb-4">
+          <h1 class="text-4xl font-bold">Add New Product</h1>
+          <p class="text-1xl font-medium">
+            Fill out the form to add a new product.
+          </p>
+        </div>
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for="title"
+        >
+          Product Title
+        </label>
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id="title"
+          placeholder="Enter product title"
+          required=""
+          type="text"
+          value=""
+          name="title"
+        />
+      </div>
+      <div class="grid gap-2">
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for="description"
+        >
+          Product Description
+        </label>
+        <textarea
+          class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id="description"
+          name="description"
+          placeholder="Enter product description"
+          rows="4"
+          required=""
+        ></textarea>
+      </div>
+      <div class="grid gap-2">
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for="image"
+        >
+          Product Image
+        </label>
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id="image"
+          accept="image/*"
+          required=""
+          type="file"
+          name="image"
+        />
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="grid gap-2">
+          <label
+            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="price"
+          >
+            Product Price
+          </label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="price"
+            min="0"
+            step="0.01"
+            placeholder="Enter product price"
+            required=""
+            type="number"
+            value="0"
+            name="price"
+          />
+        </div>
+        <div class="">
+          <div class="w-64">
+            <label class="text-sm font-medium leading-none" for="category">
+              Product Category
+            </label>
+            <select name="category" id="category">
+              <option value="electronics">Electronics</option>
+              <option value="clothing">Clothing</option>
+              <option value="home">Home</option>
+              <option value="sports">Sports</option>
+              <option value="beauty">Beauty</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid gap-2">
+        <label
+          class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          for="stocks"
+        >
+          Stocks
+        </label>
+        <input
+          class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          id="stocks"
+          placeholder="Enter stock quantity"
+          required=""
+          type="number"
+          value=""
+          name="stocks"
+        />
+      </div>
+      <button
+        id="addProduct"
+        class="inline-flex text-white items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-primary-foreground hover:bg-blue-600 h-10 px-4 py-2 w-full"
+        type="submit"
+      >
+        Save Product
+      </button>
+    </div>
+
+    <script src="addProduct.js" type="module"></script>
+  </body>
+</html>
