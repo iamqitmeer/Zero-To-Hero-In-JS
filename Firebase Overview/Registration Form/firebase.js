@@ -3,6 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/fireba
 import {
   getFirestore,
   collection,
+  doc,
+  getDoc,
   addDoc,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
@@ -10,6 +12,7 @@ import {
   getAuth,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
+  signOut,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
@@ -40,6 +43,18 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
+const docRef = doc(db, "products", "SF");
+const docSnap = await getDoc(docRef);
+
+console.log(docSnap);
+
+// if (docSnap.exists()) {
+//   console.log("Document data:", docSnap.data());
+// } else {
+//   // docSnap.data() will be undefined in this case
+//   console.log("No such document!");
+// }
+
 export {
   db,
   collection,
@@ -50,6 +65,9 @@ export {
   auth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  doc,
+  getDoc,
+  signOut,
   onAuthStateChanged,
   getDownloadURL,
   uploadBytesResumable,

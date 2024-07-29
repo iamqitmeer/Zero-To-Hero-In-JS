@@ -8,13 +8,15 @@ loginBtn.addEventListener("click", () => {
   //   console.log(email.value);
   //   console.log(password.value);
 
+ 
+
   signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
       // Signed in
       let user = userCredential.user;
       console.log(user);
       window.location =
-        "http://127.0.0.1:5500/Firebase%20Overview/Registration%20Form/index.html";
+        "/index.html";
 
       // ...
     })
