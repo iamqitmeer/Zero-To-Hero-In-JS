@@ -1,0 +1,51 @@
+JavaScript Algorithms and Data Structures Projects:
+1. Palindrome Checker - Check if a string is a palindrome.
+2. Roman Numeral Converter - Convert a number to its Roman numeral representation.
+3. Caesars Cipher - Encode a message using Caesar's cipher.
+4. Telephone Number Validator - Validate a telephone number format.
+5. Cash Register - Calculate change with a given amount of cash.
+6. Anagram Checker - Determine if two strings are anagrams of each other.
+7. Longest Word Finder - Find the longest word in a string.
+8. Word Count - Count the number of occurrences of each word in a string.
+9. Array Chunking - Split an array into chunks of a specific size.
+10. Find Missing Letter - Identify the missing letter in a range of letters.
+11. Factorial Calculator - Compute the factorial of a number.
+12. Fibonacci Sequence Generator - Generate a sequence of Fibonacci numbers up to a given limit.
+13. Binary Search - Implement binary search for a sorted array.
+14. Selection Sort - Sort an array using the selection sort algorithm.
+15. Merge Sort - Implement merge sort for an array.
+16. Queue Implementation - Create a queue data structure.
+17. Stack Implementation - Create a stack data structure.
+18. Linked List Implementation - Build a singly linked list.
+19. Doubly Linked List - Create a doubly linked list with methods to add and remove nodes.
+20. Binary Search Tree - Implement a binary search tree with insertion and search functionalities.
+21. Hash Table - Create a basic hash table with insert, delete, and search operations.
+22. Priority Queue - Implement a priority queue using a heap.
+23. Graph Traversal - Perform depth-first search (DFS) and breadth-first search (BFS) on a graph.
+24. Trie Data Structure - Build a trie with insertion and search methods.
+25. Red-Black Tree - Implement a red-black tree with insertion and balancing.
+26. Longest Common Subsequence - Find the longest common subsequence between two strings.
+27. Knapsack Problem - Solve the knapsack problem using dynamic programming.
+28. N-Queens Problem - Solve the N-Queens problem using backtracking.
+29. Dijkstra’s Shortest Path Algorithm - Implement Dijkstra’s algorithm for shortest paths.
+30. A* Pathfinding Algorithm - Implement the A* algorithm for pathfinding on a grid.
+31. Traveling Salesman Problem - Solve the Traveling Salesman Problem with brute force or heuristic methods.
+32. Dynamic Programming Coin Change - Compute the minimum number of coins needed to make a specific amount.
+33. Sudoku Solver - Implement a Sudoku solver using backtracking.
+34. Maze Generator and Solver - Generate a maze and solve it using algorithms like DFS or BFS.
+35. LRU Cache - Create an LRU (Least Recently Used) cache.
+36. Event Emitter - Build an event emitter to handle custom events.
+37. Observable Pattern - Implement the observable pattern with observers and subjects.
+38. Virtual DOM - Build a simple virtual DOM and diffing algorithm.
+39. Regular Expression Validator - Validate strings against common patterns (e.g., email, phone numbers).
+40. Bracket Validator - Check if brackets in a string are properly balanced.
+41. Roman Numeral to Integer - Convert a Roman numeral to its integer equivalent.
+42. Jaden Casing Strings - Convert a string to Jaden Casing where the first letter of each word is capitalized.
+43. Repeat a String - Repeat a string a given number of times.
+44. Simple Interest Calculator - Calculate simple interest given principal, rate, and time.
+45. Array Diff - Find the difference between two arrays and return the elements that are unique to each.
+46. Spiral Matrix - Create a matrix filled with elements in a spiral order.
+47. Intersection of Arrays - Find the intersection of two or more arrays.
+48. Generate Random Hex Color - Generate a random hexadecimal color code.
+49. Count Vowels - Count the number of vowels in a string.
+50. Transpose Matrix - Transpose a matrix (swap rows with columns).
